@@ -2,18 +2,43 @@
 <html>
 <head>
   <title>Page 2</title>
-  <style>/* Same CSS as page1 */</style>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding-top: 100px;
+    }
+    .progress {
+      width: 80%;
+      background-color: #333;
+      border-radius: 10px;
+      margin: 20px auto;
+      height: 30px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background-color: rgb(36, 255, 47);
+      transition: width 5s linear;
+    }
+  </style>
 </head>
 <body>
-  <h1>Page 2</h1>
+  <h1>You've Been Pwnd (o.O)</h1>
+  <p>Disabling Encryption...</p>
+  <p>DONE: Uncrypted - plaintext credentials grabbed</p>
+  <p>Determining Location and IP...</p>
   <div class="progress">
     <div class="progress-bar" id="bar"></div>
   </div>
 
   <script>
-    const bar = document.getElementById("bar");
-    bar.style.width = "100%";
-
+    requestAnimationFrame(() => {
+      document.getElementById("bar").style.width = "100%";
+    });
     setTimeout(() => {
       window.location.href = "page3.html";
     }, 5000);

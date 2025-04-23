@@ -21,21 +21,22 @@
     .progress-bar {
       height: 100%;
       width: 0%;
-      background-color: white;
+      background-color: rgb(36, 255, 47);
       transition: width 5s linear;
     }
   </style>
 </head>
 <body>
-  <h1>Page 1</h1>
+  <h1>You've Been Pwnd (O.o)</h1>
+  <p>Disabling Encryption...</p>
   <div class="progress">
     <div class="progress-bar" id="bar"></div>
   </div>
 
   <script>
-    const bar = document.getElementById("bar");
-    bar.style.width = "100%";
-
+    requestAnimationFrame(() => {
+      document.getElementById("bar").style.width = "100%";
+    });
     setTimeout(() => {
       window.location.href = "page2.html";
     }, 5000);
