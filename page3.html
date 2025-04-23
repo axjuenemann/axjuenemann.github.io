@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 3</title>
+  <style>/* Same CSS as previous pages */</style>
+</head>
+<body>
+  <h1>Page 3</h1>
+  <div class="progress">
+    <div class="progress-bar" id="bar"></div>
+  </div>
+
+  <script>
+    const bar = document.getElementById("bar");
+    bar.style.width = "100%";
+
+    setTimeout(() => {
+      alert("Sequence Complete!");
+      // or loop back to page1.html if you want:
+      // window.location.href = "page1.html";
+    }, 5000);
+  </script>
+</body>
+</html>

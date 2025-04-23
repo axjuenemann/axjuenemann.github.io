@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 1</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding-top: 100px;
+    }
+    .progress {
+      width: 80%;
+      background-color: #333;
+      border-radius: 10px;
+      margin: 20px auto;
+      height: 30px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background-color: white;
+      transition: width 5s linear;
+    }
+  </style>
+</head>
+<body>
+  <h1>Page 1</h1>
+  <div class="progress">
+    <div class="progress-bar" id="bar"></div>
+  </div>
+
+  <script>
+    const bar = document.getElementById("bar");
+    bar.style.width = "100%";
+
+    setTimeout(() => {
+      window.location.href = "page2.html";
+    }, 5000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 2</title>
+  <style>/* Same CSS as page1 */</style>
+</head>
+<body>
+  <h1>Page 2</h1>
+  <div class="progress">
+    <div class="progress-bar" id="bar"></div>
+  </div>
+
+  <script>
+    const bar = document.getElementById("bar");
+    bar.style.width = "100%";
+
+    setTimeout(() => {
+      window.location.href = "page3.html";
+    }, 5000);
+  </script>
+</body>
+</html>
